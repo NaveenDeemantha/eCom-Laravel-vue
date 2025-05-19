@@ -12,7 +12,7 @@
                                     We're looking for incredible people to build on our strong momentum. Help us power the brands you
                                     know and love.
                                 </p>
-                                <a href="#position" class="btn btn-primary">See All Open Positions</a>
+                                <a href="#position" class="btn btn-primary">See all Categories</a>
                             </div>
                         </div>
                     </div>
@@ -39,6 +39,25 @@
                                 <div class="image-grid-item">
                                     <img src="/images/imgs6.webp" alt="Grid Image 6" class="grid-image">
                                 </div>
+                                <div class="image-grid-item">
+                                    <img src="/images/imgs7.webp" alt="Grid Image 6" class="grid-image">
+                                </div>
+                                <div class="image-grid-item">
+                                    <img src="/images/imgs8.webp" alt="Grid Image 6" class="grid-image">
+                                </div>
+                                <div class="image-grid-item">
+                                    <img src="/images/imgs9.webp" alt="Grid Image 6" class="grid-image">
+                                </div>
+                                <div class="image-grid-item">
+                                    <img src="/images/imgs10.webp" alt="Grid Image 6" class="grid-image">
+                                </div>
+                                <div class="image-grid-item">
+                                    <img src="/images/imgs11.webp" alt="Grid Image 6" class="grid-image">
+                                </div>
+                                <div class="image-grid-item">
+                                    <img src="/images/imgs12.webp" alt="Grid Image 6" class="grid-image">
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -56,7 +75,7 @@
 }
 
 .section-wrapper {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -129,7 +148,7 @@
 
 .image-grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 8px;
 }
 

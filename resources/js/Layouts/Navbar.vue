@@ -56,7 +56,7 @@ const canRegister = usePage().props.canRegister;
 
 /* Brand Styling */
 .brand-container {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   letter-spacing: 5px;
   color: #fff;
