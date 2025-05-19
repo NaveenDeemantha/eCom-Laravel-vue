@@ -69,6 +69,7 @@
 .hero-text {
   z-index: 1;
   padding: 2rem;
+  font-family: 'roboto', sans-serif;
 }
 
 .hero-title {
@@ -79,11 +80,11 @@
 }
 
 .highlight-dark {
-  color: #fff;
+  color: #ffffff;
 }
 
 .highlight-primary {
-  color: #FF2D20;
+  color: #000000;
 }
 
 .hero-subtitle {
@@ -94,22 +95,22 @@
 
 /* Button Styling (Bootstrap Based) */
 .btn-primary {
-  background-color: #FF2D20;
+  background-color: #000000;
   border: none;
   padding: 0.75rem 1.5rem;
-  color: #fff;
+  color: #ffffff;
   font-weight: 600;
   transition: 0.3s ease-in-out;
   border-radius: 8px;
 }
 
 .btn-primary:hover {
-  background-color: #e5271c;
+  background-color: #f7f7f7;
+  color: #000000;
 }
 
 .btn-outline-primary {
-  border: 2px solid #FF2D20;
-  color: #FF2D20;
+  color: #ffffff;
   padding: 0.75rem 1.5rem;
   font-weight: 600;
   border-radius: 8px;
@@ -117,8 +118,8 @@
 }
 
 .btn-outline-primary:hover {
-  background-color: #FF2D20;
-  color: #fff;
+  background-color: #ffffff;
+  color: #000000;
 }
 
 
