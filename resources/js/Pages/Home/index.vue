@@ -5,6 +5,8 @@
 
     <StylesGrid />
 
+    <ProductList />
+
 
 </template>
 
@@ -13,6 +15,7 @@ import NavBar from '@/Layouts/NavBar.vue';
 import HeroSection from './partials/HeroSection.vue';
 import { usePage } from '@inertiajs/vue3';  
 import StylesGrid from './partials/StylesGrid.vue';
+import ProductList from './partials/ProductList.vue';
 
 export default {
     name: 'Home',
@@ -20,6 +23,7 @@ export default {
         NavBar,
         HeroSection,
         StylesGrid,
+        ProductList
     },
     computed: {
         canRegister() {
