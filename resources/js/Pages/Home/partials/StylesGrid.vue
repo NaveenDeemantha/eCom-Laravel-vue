@@ -21,43 +21,66 @@
                     <div class="container-right">
                         <div class="images-container">
                             <div class="image-grid-container">
+                              <marquee behaviour="scroll" direction="up" >
                                 <div class="image-grid-item">
                                     <img src="/images/imgs.webp" alt="Grid Image 1" class="grid-image">
                                 </div>
+                              </marquee> 
+                              <marquee behaviour="scroll" direction="down" >
                                 <div class="image-grid-item">
                                     <img src="/images/imgs2.webp" alt="Grid Image 2" class="grid-image">
                                 </div>
+                              </marquee>   
+                              <marquee behaviour="scroll" direction="up">
                                 <div class="image-grid-item">
                                     <img src="/images/imgs3.webp" alt="Grid Image 3" class="grid-image">
                                 </div>
+                              </marquee>  
+                              <marquee behaviour="scroll" direction="down" >
                                 <div class="image-grid-item">
                                     <img src="/images/imgs4.webp" alt="Grid Image 4" class="grid-image">
                                 </div>
+                              </marquee>  
+                              <marquee behaviour="scroll" direction="up">
                                 <div class="image-grid-item">
                                     <img src="/images/imgs5.webp" alt="Grid Image 5" class="grid-image">
                                 </div>
+                              </marquee>  
+                              <marquee behaviour="scroll" direction="down" >
                                 <div class="image-grid-item">
                                     <img src="/images/imgs6.webp" alt="Grid Image 6" class="grid-image">
                                 </div>
+                              </marquee>  
+                              <marquee behaviour="scroll" direction="up">
                                 <div class="image-grid-item">
                                     <img src="/images/imgs7.webp" alt="Grid Image 6" class="grid-image">
                                 </div>
+                              </marquee>  
+                              <marquee behaviour="scroll" direction="down" >
                                 <div class="image-grid-item">
                                     <img src="/images/imgs8.webp" alt="Grid Image 6" class="grid-image">
                                 </div>
+                              </marquee>  
+                              <marquee behaviour="scroll" direction="up">
                                 <div class="image-grid-item">
                                     <img src="/images/imgs9.webp" alt="Grid Image 6" class="grid-image">
                                 </div>
+                              </marquee>  
+                              <marquee behaviour="scroll" direction="down" >
                                 <div class="image-grid-item">
                                     <img src="/images/imgs10.webp" alt="Grid Image 6" class="grid-image">
                                 </div>
+                              </marquee>  
+                              <marquee behaviour="scroll" direction="up">
                                 <div class="image-grid-item">
                                     <img src="/images/imgs11.webp" alt="Grid Image 6" class="grid-image">
                                 </div>
+                              </marquee>  
+                              <marquee behaviour="scroll" direction="down" >
                                 <div class="image-grid-item">
                                     <img src="/images/imgs12.webp" alt="Grid Image 6" class="grid-image">
                                 </div>
-                                
+                              </marquee>  
                             </div>
                         </div>
                     </div>
@@ -84,6 +107,18 @@
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 0.5rem;
+}
+
+
+/* Set specific widths */
+.container-left {
+  flex: 0 0 30%;
+  max-width: 30%;
+}
+
+.container-right {
+  flex: 0 0 70%;
+  max-width: 70%;
 }
 
 .container-left,
@@ -144,17 +179,20 @@
 /* Image grid */
 .images-container {
   width: 100%;
+  height: 100%;
 }
 
 .image-grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  width: 120%;
+  height: 500px;
+  grid-template-columns: repeat(6, 1fr);
   gap: 8px;
 }
 
 .grid-image {
-  width: 100%;
-  height: auto;
+  width: 120%;
+  height: 100%;
   border-radius: 6px;
   object-fit: cover;
 }
