@@ -8,141 +8,155 @@ import { Head } from '@inertiajs/vue3';
 
     <AuthenticatedLayout>
         <template #header>
-            <div class="dashboard-hero">
-                <h1 class="dashboard-hero-title">👋 Welcome Back, Admin!</h1>
-                <p class="dashboard-hero-subtitle">Your Admin dashboard is ready ✨</p>
+            <div class="dashboard-header">
+                <h1 class="dashboard-title">📊 Admin Dashboard</h1>
+                <p class="dashboard-subtitle">Monitor HOOMANS performance at a glance</p>
             </div>
         </template>
 
-        <div class="dashboard-wrapper">
-            <div class="dashboard-card">
-                <div class="dashboard-card-glass">
-                    <div class="dashboard-icon">
-                        <svg
-                            class="icon"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="1.5"
-                            viewBox="0 0 24 24"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                d="M9.75 17.25L6 21m0 0l-3.75-3.75M6 21V3m12 0l3.75 3.75M18 3l-3.75 3.75M18 3v18"
-                            />
-                        </svg>
-                    </div>
-                    <div class="dashboard-text">
-                        <h2 class="card-title">You're logged in!</h2>
-                        <p class="card-message">
-                            Dive into your tools, stats, and settings using the sidebar.
-                            Let’s make something awesome today 🚀
-                        </p>
-                    </div>
+        <div class="dashboard-content">
+            <!-- Metrics Section -->
+            <div class="metrics-grid">
+                <div class="card">
+                    <h2>Total Sales</h2>
+                    <p>$12,540</p>
+                    <span class="card-hint">+18% from last month</span>
                 </div>
+                <div class="card">
+                    <h2>New Users</h2>
+                    <p>1,203</p>
+                    <span class="card-hint">+9.3% increase</span>
+                </div>
+                <div class="card">
+                    <h2>Orders</h2>
+                    <p>874</p>
+                    <span class="card-hint">+5% from last week</span>
+                </div>
+                <div class="card">
+                    <h2>Traffic</h2>
+                    <p>48,590</p>
+                    <span class="card-hint">+22% unique visitors</span>
+                </div>
+            </div>
+
+            <!-- Welcome Box -->
+            <div class="welcome-card">
+                <h2>Welcome Back, Admin 👋</h2>
+                <p>
+                    Here's a quick overview of how your HOOMANS brand is performing. Use the sidebar to manage products, orders, and customers.
+                </p>
             </div>
         </div>
     </AuthenticatedLayout>
 </template>
 
 <style scoped>
-/* Background */
-.dashboard-wrapper {
-    background: linear-gradient(135deg, #667eea, #764ba2);
+/* Overall Background */
+.dashboard-content {
+    background: #0d0d0d;
     min-height: calc(100vh - 64px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 2rem;
-}
-
-/* Hero Section */
-.dashboard-hero {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.dashboard-hero-title {
-    font-size: 2.25rem;
-    font-weight: 800;
-    color: #1f2937;
-    animation: fadeInDown 0.6s ease-out;
-}
-
-.dashboard-hero-subtitle {
-    color: #6b7280;
-    font-size: 1rem;
-    margin-top: 0.5rem;
-    animation: fadeIn 1.2s ease-in;
-}
-
-/* Glassmorphism Card */
-.dashboard-card {
-    width: 100%;
-    max-width: 720px;
-}
-
-.dashboard-card-glass {
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 20px;
-    padding: 2rem;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
-    animation: floatUp 1s ease-out;
-    color: white;
-}
-
-.dashboard-icon .icon {
-    width: 4rem;
-    height: 4rem;
     color: #ffffff;
-    opacity: 0.85;
 }
 
-.card-title {
-    font-size: 1.5rem;
+/* Header */
+.dashboard-header {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.dashboard-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.dashboard-subtitle {
+    font-size: 1rem;
+    color: #9ca3af;
+}
+
+/* Grid for Metrics */
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.card h2 {
+    font-size: 1.2rem;
+    color: #cccccc;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 0.25rem;
+    color: #ffffff;
 }
 
-.card-message {
-    font-size: 0.95rem;
-    opacity: 0.9;
+.card-hint {
+    font-size: 0.875rem;
+    color: #22c55e;
 }
 
-/* Animations */
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Welcome Box */
+.welcome-card {
+    background: linear-gradient(145deg, #1c1c1c, #111);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 
-@keyframes floatUp {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.welcome-card h2 {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
+.welcome-card p {
+    font-size: 1rem;
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .dashboard-title {
+        font-size: 1.75rem;
     }
-    to {
-        opacity: 1;
+
+    .metrics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card p {
+        font-size: 1.5rem;
     }
 }
 </style>
