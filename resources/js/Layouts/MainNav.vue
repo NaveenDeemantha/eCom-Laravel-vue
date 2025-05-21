@@ -4,7 +4,7 @@
       <!-- Logo -->
       <div class="logo" :class="{ 'black-logo': isScrolled }">
         <img src="/images/logo1.png" alt="Logo" />
-        <span>HOOMANS</span>
+        <span class="brand-name">HOOMANS</span>
       </div>
 
       <!-- Navigation Links -->
@@ -59,6 +59,13 @@ onUnmounted(() => {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.brand-name {
+  font-family: 'Nura', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .logo {

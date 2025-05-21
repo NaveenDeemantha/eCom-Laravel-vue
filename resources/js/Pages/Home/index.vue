@@ -11,6 +11,9 @@
     <ProductList />
 
 
+    <Footer />
+
+
 </template>
 
 <script>
@@ -22,6 +25,7 @@ import HeroSection from './partials/HeroSection.vue';
 import { usePage } from '@inertiajs/vue3';  
 import StylesGrid from './partials/StylesGrid.vue';
 import ProductList from './partials/ProductList.vue';
+import Footer from '@/Layouts/Footer.vue';
 
 export default {
     name: 'Home',
@@ -30,7 +34,8 @@ export default {
         MainNav,
         HeroSection,
         StylesGrid,
-        ProductList
+        ProductList,
+        Footer,
     },
     computed: {
         canRegister() {
