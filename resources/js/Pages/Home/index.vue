@@ -1,5 +1,8 @@
 <template>
+    <Head title="Home" />
     <NavBar />
+
+    <MainNav />
 
     <HeroSection />
 
@@ -11,7 +14,10 @@
 </template>
 
 <script>
+
+import { Head } from '@inertiajs/vue3'
 import NavBar from '@/Layouts/NavBar.vue';
+import MainNav from '@/Layouts/MainNav.vue';
 import HeroSection from './partials/HeroSection.vue';
 import { usePage } from '@inertiajs/vue3';  
 import StylesGrid from './partials/StylesGrid.vue';
@@ -21,6 +27,7 @@ export default {
     name: 'Home',
     components: {
         NavBar,
+        MainNav,
         HeroSection,
         StylesGrid,
         ProductList
