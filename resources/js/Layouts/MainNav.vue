@@ -9,11 +9,11 @@
 
       <!-- Navigation Links -->
       <nav class="nav-links">
-        <a href="#home" :class="isScrolled ? 'black' : 'white'">Home</a>
+        <a href="/home" :class="isScrolled ? 'black' : 'white'">Home</a>
         <a href="#categories" :class="isScrolled ? 'black' : 'white'">Categories</a>
         <a href="#sale" :class="isScrolled ? 'black' : 'white'">Sale</a>
-        <a href="#about" :class="isScrolled ? 'black' : 'white'">About Us</a>
-        <a href="#contact" :class="isScrolled ? 'black' : 'white'">Contact Us</a>
+        <Link href="/about" :class="isScrolled ? 'black' : 'white'">About Us</Link>
+        <Link href="/contact" :class="isScrolled ? 'black' : 'white'">Contact Us</Link>
       </nav>
     </div>
   </header>
@@ -21,6 +21,7 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+import { Link } from '@inertiajs/vue3'
 
 const isScrolled = ref(false)
 
