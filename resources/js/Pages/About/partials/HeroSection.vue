@@ -4,7 +4,7 @@
       <img src="/images/about-hero.jpg" alt="Team working" />
       <div class="overlay-content">
         <h1>About Us</h1>
-        <p>We are passionate about creating amazing digital experiences that engage and inspire.</p>
+        <p>We are very passionate about creating amazing digital experiences that engage and inspire.</p>
       </div>
     </div>
   </section>
