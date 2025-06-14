@@ -3,11 +3,11 @@
     <NavBar />
 
     <MainNav />
-    <br>
-
+    
     <HeroSection />
 
-    
+    <Descript />
+        
     <Footer />
 </template>
 <script>
@@ -16,6 +16,7 @@ import NavBar from '@/Layouts/NavBar.vue';
 import MainNav from '@/Layouts/MainNav.vue';
 import Footer from '@/Layouts/Footer.vue';  
 import HeroSection from './partials/HeroSection.vue';
+import Descript from './partials/Descript.vue';
 
 export default {
     name: 'About',
@@ -23,6 +24,7 @@ export default {
         NavBar,
         MainNav,
         HeroSection,
+        Descript,
         Footer,
     },
 }; 
