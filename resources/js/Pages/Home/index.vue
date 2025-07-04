@@ -4,12 +4,13 @@
 
     <MainNav />
 
-    <HeroSection />
+    <div class="page-content">
+        <HeroSection />
 
-    <StylesGrid />
+        <StylesGrid />
 
-    <ProductList />
-
+        <ProductList />
+    </div>
 
     <Footer />
 
@@ -46,6 +47,8 @@ export default {
 
 </script>
 
-<style>
-
+<style scoped>
+.page-content {
+    margin-top: 90px; /* Adjust as needed for your nav height */
+}
 </style>

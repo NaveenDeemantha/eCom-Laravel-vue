@@ -22,6 +22,14 @@ Route::get('/contact', function() {
     return Inertia::render('Contact/index');
 })->name('contact');
 
+Route::get('/categories', function() {
+    return Inertia::render('Categories/index');
+})->name('categories');
+
+Route::get('/sale', function() {
+    return Inertia::render('Sale/index');
+})->name('sale');
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

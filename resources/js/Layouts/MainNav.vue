@@ -10,8 +10,8 @@
       <!-- Desktop Navigation -->
       <nav class="nav-links desktop-only">
         <Link href="/" :class="isScrolled ? 'black' : 'white'">Home</Link>
-        <a href="#categories" :class="isScrolled ? 'black' : 'white'">Categories</a>
-        <a href="#sale" :class="isScrolled ? 'black' : 'white'">Sale</a>
+        <Link href="/categories" :class="isScrolled ? 'black' : 'white'">Categories</Link>
+        <Link href="/sale" :class="isScrolled ? 'black' : 'white'">Sale</Link>
         <Link href="/about" :class="isScrolled ? 'black' : 'white'">About Us</Link>
         <Link href="/contact" :class="isScrolled ? 'black' : 'white'">Contact Us</Link>
       </nav>
@@ -28,8 +28,8 @@
     <!-- Mobile Nav Menu -->
     <div v-if="showMobileMenu" class="mobile-nav">
       <Link href="/" @click="closeMenu">Home</Link>
-      <a href="#categories" @click="closeMenu">Categories</a>
-      <a href="#sale" @click="closeMenu">Sale</a>
+      <Link href="/categories" @click="closeMenu">Categories</Link>
+      <Link href="/sale" @click="closeMenu">Sale</Link>
       <Link href="/about" @click="closeMenu">About Us</Link>
       <Link href="/contact" @click="closeMenu">Contact Us</Link>
     </div>
